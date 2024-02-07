@@ -8,10 +8,13 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './index.css'
+import Register from './pages/Register.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<App />}></Route>
+    <Route path='/' element={<App />}>
+      <Route path="/signup" element={<Register />}></Route>
+    </Route>
   )
 );
 
